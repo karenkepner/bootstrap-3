@@ -1,5 +1,6 @@
 body {
-  background-color: lightcyan;
+  background-color: lightgrey; 
+  padding-top: 70px;
 }
 
 nav {
@@ -13,3 +14,7 @@ nav {
 .navbar-brand {
   padding: 0;
 }
+
+/* 
+ *  techtonic green: #adcc21
+ */

@@ -8,10 +8,13 @@
   <!-- Latest compiled and minified CSS  for Bootstrap 3-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <!-- add font awesome -->
+  <script src="https://kit.fontawesome.com/4f6a77d785.js"></script>
+
 </head>
 <body>
   <!-- from https://getbootstrap.com/docs/3.3/components/#nav -->
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -27,8 +30,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#">MTN Images</a></li>
-            <li><a href="https://getbootstrap.com/docs/3.3/css/#overview">Bootstrap 3 Docs</a></li>
+            <li><a href="#"><span class="fas fa-image" aria-hidden="true"></span> MTN Images</a></li>
+            <li><a href="https://getbootstrap.com/docs/3.3/css/#overview" target="_blank">Bootstrap 3 Docs</a></li>
           </ul>
           <!-- <form class="navbar-form navbar-left">
             <div class="form-group">
@@ -38,51 +41,65 @@
           </form> -->
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Signup</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#"><span class="fas fa-fire"></span> Login</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
     <section class="container">
       <div class="jumbotron">
-        <h1>The Image Gallery in Bootstrap 3</h1>
+        <h1><span class="fas fa-camera-retro" aria-hidden="true"></span> The Image Gallery (Bootstrap 3)</h1>
         <p>Some of my photographs from the outdoors.</p>
       </div>
-      <div class="row">
-        <div class="col-lg-4">
+      <!-- all 9 images in onw row, the bs knows to wrap using col-lg-4 -->
+      <div class="row"> 
+        <div class="col-lg-4 col-sm-6">
           <div class="thumbnail">
             <img src="img/black_bear_trail01.jpg" alt="Black Bear trail front range denver colorado bike trail">
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-6">
           <div class="thumbnail">
             <img src="img/aleyeska-alaska-trail.jpg" alt="Aleyeska Alaska Trail">
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-6">
           <div class="thumbnail">
             <img src="img/arapahoe-basin-view-from-montezuma.jpg" alt="Arapahoe Basin Colorado SKi Area view wintertime">
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-6">
           <div class="thumbnail">
             <img src="img/top-of-copper-view.jpg" alt="view from the top of copper mountain colorado in wintertime">
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-6">
           <div class="thumbnail">
             <img src="img/lake-pueblo-state-park.jpg" alt="Lake Pueblo state park colorado">
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-6">
           <div class="thumbnail">
             <img src="img/sheep-creek-fall-color.jpg" alt="Sheep Creek in Park County Colorado">
           </div>
         </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <img src="img/top-of-copper-view.jpg" alt="view from the top of copper mountain colorado in wintertime">
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <img src="img/lake-pueblo-state-park.jpg" alt="Lake Pueblo state park colorado">
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <img src="img/sheep-creek-fall-color.jpg" alt="Sheep Creek in Park County Colorado">
+            </div>
+          </div>
+        </div>
 
-      </div>
     </section>
 
 
